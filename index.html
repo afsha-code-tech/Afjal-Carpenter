@@ -13,7 +13,7 @@ header{height:95vh;background:linear-gradient(rgba(62,39,35,0.65),rgba(62,39,35,
 header h1{font-size:60px;font-weight:700;animation:fadeDown 1s ease;}
 header p{font-size:22px;margin:15px 0;animation:fadeUp 1.2s ease;max-width:700px;}
 .btn-group{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:20px;}
-.btn{background:#FF9800;color:white;padding:16px 32px;border:none;border-radius:10px;font-size:18px;font-weight:600;cursor:pointer;transition:0.3s;box-shadow:0 4px 15px rgba(255,152,0,0.4);}
+.btn{background:#FF9800;color:white;padding:16px 32px;border:none;border-radius:10px;font-size:18px;font-weight:600;cursor:pointer;transition:0.3s;box-shadow:0 4px 15px rgba(255,152,0,0.4);text-decoration:none;display:inline-block;}
 .btn:hover{transform:translateY(-3px);background:#F57C00;}
 .btn-outline{background:transparent;border:2px solid white;}
 .btn-outline:hover{background:white;color:#5D4037;}
@@ -29,7 +29,7 @@ h2{text-align:center;font-size:35px;color:#5D4037;margin-bottom:40px;}
 .quote{font-size:24px;font-style:italic;margin:20px 0;color:#FFCC80;}
 .price-box{background:#FFF3E0;border:2px dashed #FF9800;padding:30px;border-radius:15px;text-align:center;margin-top:30px;}
 .price-box h3{color:#E65100;margin-bottom:15px;font-size:24px;}
-.contact-wrap{background:#FFF;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+.contact-box{background:#FFF;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);text-align:center;}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 footer{background:#3E2723;color:white;text-align:center;padding:40px;}
@@ -44,13 +44,13 @@ footer{background:#3E2723;color:white;text-align:center;padding:40px;}
   <p class="quote">"Wood is not just material, it's art. And I bring that art to your home."</p>
   <p>With 20+ years of craftsmanship, I create furniture that lasts generations. <br>I provide doorstep wood work service in Delhi NCR.</p>
   <div class="btn-group">
-    <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView()">Get Free Enquiry</button>
-    <button class="btn btn-outline" onclick="document.getElementById('hire').scrollIntoView()">Hire Me</button>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?usp=dialog" target="_blank" class="btn">Get Free Enquiry</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?usp=dialog" target="_blank" class="btn btn-outline">Hire Me</a>
   </div>
 </header>
 
 <section>
-  <h2>I have some beautiful works to show you</h2>
+  <h2>My Work Gallery</h2>
   <div class="grid">
     <div class="card"><img src="Screenshot_20260709_224743_Gallery.jpg"><h3>Custom Wardrobe Design</h3></div>
     <div class="card"><img src="Screenshot_20260709_224739_Gallery.jpg"><h3>Modular Kitchen Setup</h3></div>
@@ -88,20 +88,15 @@ footer{background:#3E2723;color:white;text-align:center;padding:40px;}
   <div class="about" style="background:linear-gradient(135deg, #FF9800, #E65100);">
     <h2 style="color:white;">Hire Me For Your Dream Project</h2>
     <p style="font-size:18px;line-height:1.8;">Looking for custom made furniture? Wardrobe, Kitchen, Bed, or anything in wood? <br>I am just one message away. Let's build something beautiful together for your home.</p>
-    <button class="btn" style="background:white;color:#E65100;margin-top:20px;" onclick="document.getElementById('enquiry').scrollIntoView()">Hire Me Now</button>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?usp=dialog" target="_blank" class="btn" style="background:white;color:#E65100;margin-top:20px;">Hire Me Now</a>
   </div>
 </section>
 
-<section id="enquiry">
-  <h2>Send Me Your Enquiry</h2>
-  <div class="contact-wrap">
-    <p style="text-align:center;margin-bottom:20px;">Fill this form and I will call you within 24 hours</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?embedded=true" 
-      width="100%" 
-      height="750" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0">Loading…</iframe>
+<section>
+  <h2>Send Enquiry</h2>
+  <div class="contact-box">
+    <p style="font-size:18px;margin-bottom:20px;">Click below to fill the enquiry form. I will call you within 24 hours.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?usp=dialog" target="_blank" class="btn">Fill Enquiry Form</a>
   </div>
 </section>
 
@@ -124,4 +119,4 @@ cards.forEach(card=>observer.observe(card));
 </script>
 
 </body>
-  </html>
+</html>
