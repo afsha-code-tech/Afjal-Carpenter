@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afjal Carpenter - 20+ Years Experience | Delhi NCR</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Poppins', sans-serif;background:#FFF8F0;color:#3E2723;}
+.banner{background:#E65100;color:white;text-align:center;padding:12px;font-weight:600;position:sticky;top:0;z-index:1000;letter-spacing:0.5px;}
+header{height:95vh;background:linear-gradient(rgba(62,39,35,0.65),rgba(62,39,35,0.65)), url('Screenshot_20260709_224743_Gallery.jpg');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:20px;}
+header h1{font-size:60px;font-weight:700;animation:fadeDown 1s ease;}
+header p{font-size:22px;margin:15px 0;animation:fadeUp 1.2s ease;max-width:700px;}
+.btn-group{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:20px;}
+.btn{background:#FF9800;color:white;padding:16px 32px;border:none;border-radius:10px;font-size:18px;font-weight:600;cursor:pointer;transition:0.3s;box-shadow:0 4px 15px rgba(255,152,0,0.4);}
+.btn:hover{transform:translateY(-3px);background:#F57C00;}
+.btn-outline{background:transparent;border:2px solid white;}
+.btn-outline:hover{background:white;color:#5D4037;}
+section{padding:70px 20px;max-width:1200px;margin:auto;}
+h2{text-align:center;font-size:35px;color:#5D4037;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+.card{background:#FFF;border-radius:15px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.1);transition:0.4s;opacity:0;transform:translateY(40px);}
+.card.show{opacity:1;transform:translateY(0);}
+.card:hover{transform:translateY(-10px);}
+.card img{width:100%;height:240px;object-fit:cover;}
+.card h3{padding:20px;color:#5D4037;font-size:20px;text-align:center;}
+.about{background:linear-gradient(135deg, #5D4037, #3E2723);color:white;border-radius:20px;padding:50px;text-align:center;}
+.quote{font-size:24px;font-style:italic;margin:20px 0;color:#FFCC80;}
+.price-box{background:#FFF3E0;border:2px dashed #FF9800;padding:30px;border-radius:15px;text-align:center;margin-top:30px;}
+.price-box h3{color:#E65100;margin-bottom:15px;font-size:24px;}
+.contact-wrap{background:#FFF;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+footer{background:#3E2723;color:white;text-align:center;padding:40px;}
+</style>
+</head>
+<body>
+
+<div class="banner">⚡ 20+ Years Experience | Quality Wood Work | Home Service Available</div>
+
+<header>
+  <h1>Afjal Carpenter</h1>
+  <p class="quote">"Wood is not just material, it's art. And I bring that art to your home."</p>
+  <p>With 20+ years of craftsmanship, I create furniture that lasts generations. <br>I provide doorstep wood work service in Delhi NCR.</p>
+  <div class="btn-group">
+    <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView()">Get Free Enquiry</button>
+    <button class="btn btn-outline" onclick="document.getElementById('hire').scrollIntoView()">Hire Me</button>
+  </div>
+</header>
+
+<section>
+  <h2>I have some beautiful works to show you</h2>
+  <div class="grid">
+    <div class="card"><img src="Screenshot_20260709_224743_Gallery.jpg"><h3>Custom Wardrobe Design</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224739_Gallery.jpg"><h3>Modular Kitchen Setup</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224735_Gallery.jpg"><h3>Premium Wooden Door</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224730_Gallery.jpg"><h3>King Size Bed with Storage</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224725_Gallery.jpg"><h3>TV Unit & Cabinet</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224720_Gallery.jpg"><h3>Sliding Wardrobe</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224715_Gallery.jpg"><h3>Study Table & Shelf</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224710_Gallery.jpg"><h3>Wooden Window Frame</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224706_Gallery.jpg"><h3>Office Furniture Work</h3></div>
+    <div class="card"><img src="Screenshot_20260709_224658_Gallery.jpg"><h3>Furniture Repair Service</h3></div>
+  </div>
+</section>
+
+<section>
+  <div class="about">
+    <h2 style="color:white;">About Me</h2>
+    <p style="font-size:18px;line-height:1.9;">I am Afjal Carpenter. For the last 20+ years, I have been crafting dreams into wood. From a small repair to a complete modular kitchen, I handle every project with honesty and perfection. I come to your home, understand your need, and deliver quality work with premium materials. Your satisfaction is my guarantee.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Service Visit Charges</h2>
+  <div class="price-box">
+    <h3>First Meeting / Site Visit Charges</h3>
+    <p><b>Upto 5 KM:</b> ₹200</p>
+    <p><b>Upto 10 KM:</b> ₹300</p>
+    <p><b>10 - 12 KM:</b> ₹500</p>
+    <p style="margin-top:15px;font-size:15px;color:#5D4037;"><b>Note:</b> If you confirm the work with me, this visit charge will be adjusted in your final bill.</p>
+  </div>
+</section>
+
+<section id="hire">
+  <h2>Want Custom Furniture?</h2>
+  <div class="about" style="background:linear-gradient(135deg, #FF9800, #E65100);">
+    <h2 style="color:white;">Hire Me For Your Dream Project</h2>
+    <p style="font-size:18px;line-height:1.8;">Looking for custom made furniture? Wardrobe, Kitchen, Bed, or anything in wood? <br>I am just one message away. Let's build something beautiful together for your home.</p>
+    <button class="btn" style="background:white;color:#E65100;margin-top:20px;" onclick="document.getElementById('enquiry').scrollIntoView()">Hire Me Now</button>
+  </div>
+</section>
+
+<section id="enquiry">
+  <h2>Send Me Your Enquiry</h2>
+  <div class="contact-wrap">
+    <p style="text-align:center;margin-bottom:20px;">Fill this form and I will call you within 24 hours</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScET7JsokqXdFN2gTGdv3gSCZBqRLlI6EzEYw4X71VaBWnmmg/viewform?embedded=true" 
+      width="100%" 
+      height="750" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">Loading…</iframe>
+  </div>
+</section>
+
+<footer>
+  <h3>Afjal Carpenter</h3>
+  <p>📍 Service: Delhi, Mulla colony </p>
+  <p style="margin-top:15px;">© 2026 Afjal Carpenter. "Crafting Homes, One Wood at a Time."</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{threshold:0.1});
+cards.forEach(card=>observer.observe(card));
+</script>
+
+</body>
+  </html>
